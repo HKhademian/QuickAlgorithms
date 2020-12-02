@@ -1,15 +1,20 @@
 //https://blog.usejournal.com/top-50-dynamic-programming-practice-problems-4208fed71aa3
 //https://www.techiedelight.com/longest-common-subsequence/
 
-package Longest_Common_Subsequence
+@file:Suppress("PackageDirectoryMismatch", "FunctionName", "PackageName")
+
+package Longest_Common_SubSequence
 
 import utils.Array2D
 import utils.maxByOrNull
 
 fun main() {
-	println("Longest Common Subsequence via DP : lookup holds answer")
+	println("Longest Common SubSequence via DP : lookup holds answer")
 	while (true) {
-		println(LCSubSeq_DP(readLine()!!, readLine()!!))
+		val X = readLine()!! // ABCBDAB
+		val Y = readLine()!! // BDCABA
+		val res = LCSubSeq_DP(X, Y)
+		println(res)
 	}
 }
 

@@ -2,14 +2,19 @@
 //https://www.techiedelight.com/longest-common-substring-problem/
 //https://en.wikipedia.org/wiki/Longest_common_substring_problem
 
+@file:Suppress("PackageDirectoryMismatch", "FunctionName", "PackageName")
+
 package Longest_Common_SubString
 
 import utils.Array2D
 
 fun main() {
-	println("Longest Common SubString via DP : lookup holds answer")
+	println("Longest Common SubString via DP:\nlookup holds answer")
 	while (true) {
-		println(LCSubStr_DP(readLine()!!, readLine()!!))
+		val X = readLine()!! // ABCBDAB
+		val Y = readLine()!! // BDCABA
+		val res = LCSubStr_DP(X, Y)
+		println(res)
 	}
 }
 

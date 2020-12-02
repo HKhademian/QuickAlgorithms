@@ -1,16 +1,19 @@
 //https://blog.usejournal.com/top-50-dynamic-programming-practice-problems-4208fed71aa3
 //https://www.techiedelight.com/longest-common-subsequence/
 
-package Longest_Palindromic_Subsequence
+@file:Suppress("PackageDirectoryMismatch", "FunctionName", "PackageName")
+
+package Longest_Palindromic_SubSequence
 
 import utils.Array2D
 import utils.maxByOrNull
 
 fun main() {
-	println("Longest Palindromic Subsequence via DP")
+	println("Longest Palindromic SubSequence via DP")
 	while (true) {
-		val inp = readLine()!!
-		println(LPSubSeq_DP(inp))
+		val X = readLine()!!
+		val res = LPSubSeq_DP(X)
+		println(res)
 	}
 }
 

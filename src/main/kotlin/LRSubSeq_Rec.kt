@@ -1,15 +1,18 @@
 //https://blog.usejournal.com/top-50-dynamic-programming-practice-problems-4208fed71aa3
 //https://www.techiedelight.com/longest-repeated-subsequence-problem/
 
-package Longest_Repeated_Subsequence
+@file:Suppress("PackageDirectoryMismatch", "FunctionName", "PackageName")
+
+package Longest_Repeated_SubSequence
 
 import utils.maxByOrNull
 
 fun main() {
-	println("Longest Repeated Subsequence via Recursive")
+	println("Longest Repeated SubSequence via Recursive")
 	while (true) {
-		val inp = readLine()!! //ATACTCGGA
-		println(LRSubSeq_Req(inp, inp.length - 1, inp.length - 1))
+		val X = readLine()!! //ATACTCGGA
+		val res = LRSubSeq_Req(X, X.length - 1, X.length - 1)
+		println(res)
 	}
 }
 
