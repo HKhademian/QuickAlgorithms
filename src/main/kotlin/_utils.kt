@@ -9,3 +9,6 @@ inline fun <reified T> Array2D(rows: Int, cols: Int, init: (row: Int, col: Int) 
 
 fun <T, R : Comparable<R>> maxByOrNull(vararg items: T, selector: (T) -> R) =
 	items.maxByOrNull(selector)
+
+fun <T, R : Comparable<R>> minByOrNull(vararg items: T, selector: (T) -> R) =
+	items.minByOrNull(selector)
